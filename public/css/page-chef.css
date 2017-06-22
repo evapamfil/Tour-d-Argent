@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "Lato-regular";
+    src: url("../font/Lato-Regular.ttf")
+}
+@font-face {
+    font-family: "Lato-light";
+    src: url("../font/Lato-Light.ttf")
+}
+@font-face {
+    font-family: "Oswald-regular";
+    src: url("../font/Oswald-Regular.ttf")
+}
+@font-face {
+    font-family: "Oswald-light";
+    src: url("../font/Oswald-Light.ttf")
+}
+@font-face {
+    font-family: "Questrial-regular";
+    src: url("../font/Questrial-Regular.ttf")
+}
+@font-face {
+    font-family: "Oswald-extralight";
+    src: url("../font/Oswald-ExtraLight.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-left: 60px;
+    margin-right: 60px;
+
+
+}
+
+
+#logo {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+
+}
+header{
+    height: 50px;
+    background-color: #ffffff;
+    z-index: 999;
+
+}
+.fixe {
+    position: fixed;
+    width: 100%;
+
+}
+.fixe1{
+    padding-right: 120px;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+.menu{
+    display: inline-block;
+    font-family: Oswald-light;
+    font-size: 15px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 22px;
+    position: relative;
+
+}
+.rotate{
+    transform: rotate(180deg);
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+
+}
+.menu a img{
+    height: 5px;
+    width: auto;
+    text-align: center;
+    margin-left: 5px;
+}
+.off{
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: white;
+}
+.off li a{
+
+    padding: 5px;
+    text-align: left;
+
+}
+
+
+.line{
+    width: 100%;
+    border-top: solid 0.5px black;
+    margin-left: -2px;
+
+}
+
+.line-type-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.line-type-title img{
+    text-align: center;
+    width: 20px;
+    height: auto;
+}
+.big-title-left{
+    font-family: Oswald-extralight;
+    font-weight: normal;
+    font-size: 60px;
+    margin-right: 10px;
+    width: 18%;
+
+}
+.big-title-right{
+    font-family: Oswald-extralight;
+    display: inline;
+    font-weight: normal;
+    font-size: 60px;
+    margin-left: 10px;
+
+}
+#labbe{
+    width: 60%;
+}
+#title-cave{
+    width: 20%;
+}
+
+
+#img-chef{
+    width: 35%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.title-article {
+    float: left;
+    font-family: oswald-light;
+    font-size: 40px;
+    width: 37%;
+    font-weight: normal;
+
+}
+.title-article-right {
+    float: right;
+    font-family: oswald-light;
+    font-size: 40px;
+    width: 35%;
+    font-weight: normal;
+
+}
+.line-type-article-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 20%;
+    margin-left: -70px;
+    float: left;
+
+}
+.line-type-article-left img{
+    text-align: center;
+    width: 15px;
+    height: auto;
+}
+
+.line-type-article-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 20%;
+    margin-right: -50px;
+    float: right;
+
+}
+.line-type-article-right img{
+    text-align: center;
+    width: 15px;
+    height: auto;
+    
+}
+.p-italic {
+    font-family: lato-light;
+    font-style: italic;
+    float: left;
+    width: 55%;
+    margin-bottom: 10px;
+}
+#cave1{
+    overflow: hidden;
+}
+.text-left{
+    font-family: lato-light; 
+    float: left;
+    width: 48%;
+    
+}
+#img-cave{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+.text-right{
+    float: right;
+    text-align: right;
+    font-family: lato-light;
+    width: 48%;
+    margin-right: 20px
+}
+#cave2{
+    margin-top: 50px;
+}
+#img-cave2{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+#img-boulanger{
+    width: 35%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+#title-boulanger{
+    width: 40%;
+}
+#title-article-boulanger{
+    width: 55%;
+}
+#text-boulanger{
+    width: 60%;
+}
+#title-rotisserie{
+    width: 40%;
+}
+#cave2{
+    overflow: hidden;
+}
+#img-rotisserie{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+/* SWIPER */
+
+.swiper-container {
+    
+    height: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    float: left;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container img{
+    width: 250px;
+}
+#img-rotisserie-serveur{
+    width: 35%;
+    height: auto;
+    float: right;
+}
+#title-roti{
+    width: 50%;
+}
+.text-right{
+    font-family: lato-light;
+    float: right;
+}
+
+/*FOOTER*/
+
+footer{
+    height: 30px;
+    margin-top: 50px;
+
+}
+
+#nav-footer{
+    float: left;
+    list-style-type: none;
+}
+#nav-footer li {
+    display: inline;
+    margin-right: 15px;
+}
+
+#nav-footer li a {
+    font-family: oswald-light;
+     text-decoration: none;
+    color: #000000;
+}
+
+
+#social-network{
+    list-style-type: none;
+    float: right;
+}
+
+#social-network li{
+    display: inline;
+    margin-left: 15px;
+}
+
+#social-network img{
+    height: 15px;
+    width: auto;
+}
+main{
+    overflow: hidden;
+}
