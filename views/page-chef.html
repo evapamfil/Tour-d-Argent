@@ -5,7 +5,10 @@
         <title>Le Chef</title>
 
         <link rel="stylesheet" type="text/css" href="../static/css/page-chef.css">
+        
         <link rel="stylesheet" href="../static/css/swiper.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="../static/css/main.css">
 
         <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
@@ -19,14 +22,14 @@
             <nav>
                 <ul>
                     <li class="menu">
-                        <a href="/static/index.html">ACCUEIL</a>
+                        <a href="/">ACCUEIL</a>
                     </li>
-                    <li class="menu" id="chef">
-                        <a href="/static/page-chef.html" >LE CHEF <img src="../static/pictures/Fichier%201.png"></a>
+                   <li class="menu" id="chef">
+                        <a href="/chef" >LE CHEF <img src="../static/pictures/Fichier%201.png"></a>
                         <ul class="off">
-                            <li><a>LA CAVE</a></li>
-                            <li><a>LE BOULANGER</a></li>
-                            <li><a>LA RÔTISSERIE</a></li>
+                            <li><a href="/chef/#section-cave">LA CAVE</a></li>
+                            <li><a href="/chef/#section-boulanger">LE BOULANGER</a></li>
+                            <li><a href="/chef/#section-rotisserie">LA RÔTISSERIE</a></li>
                         </ul>
                     </li>
                     <li class="menu">
@@ -59,7 +62,7 @@
             </nav>
         </header>
         <main>
-            <section id="chef">
+            <section id="section-chef">
                 <div class="line-type-title">
                     <h1 class="big-title-left">LE CHEF</h1>
                     <img src="../static/pictures/Trac%C3%A9%20145.png">
@@ -105,7 +108,7 @@
                 </div>
 
             </section>
-            <section id="cave">
+            <section id="section-cave">
                 <div class="line-type-title">
                     <div class="line"></div>
                     <img src="../static/pictures/Trac%C3%A9%20145.png">
@@ -138,7 +141,7 @@
 
                 </article>
             </section>
-            <section id="boulanger">
+            <section id="section-boulanger">
                 <div class="line-type-title">
                     <h1 id="title-boulanger" class="big-title-left">LE BOULANGER</h1>
                     <img src="../static/pictures/Trac%C3%A9%20145.png">
@@ -184,7 +187,7 @@
                 </div>
                 
             </section>
-            <section id="rotisserie">
+            <section id="section-rotisserie">
                 <div class="line-type-title">
                     <div class="line"></div>
                     <img src="../static/pictures/Trac%C3%A9%20145.png">
@@ -234,10 +237,10 @@
         
          <footer>
             <ul id="nav-footer">
-                <li><a href="/static/mentions-legales.html">MENTION LEGALES</a></li>
-                <li><a href="/static/rejoingnez-nous.html">REJOIGNEZ-NOUS</a></li>
-                <li><a href="/static/contact.html">CONTACT</a></li>
-                <li><a href="/static/credit.html">CREDIT</a></li>
+                <li><a href="/mentions-legales">MENTION LEGALES</a></li>
+                <li><a href="/rejoingnez-nous">REJOIGNEZ-NOUS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/credit">CREDIT</a></li>
             </ul>
 
             <ul id=social-network>
@@ -253,6 +256,7 @@
 
         <script src="../static/js/swiper.jquery.min.js">
         </script>
-        <script type="text/javascript" src="../static/js/page-chef.js"></script>
+      <script type="text/javascript" src="../static/js/script.js"></script>
+       <script type="text/javascript" src="../static/js/swiper2.js"></script>
     </body>
 </html>

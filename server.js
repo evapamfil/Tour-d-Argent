@@ -24,5 +24,27 @@ app.get('/', function (req, res) {
     console.log('REQ on /');
     res.sendFile(__dirname + '/views/index.html');
 });
+
+app.get('/chef', function (req, res) {
+    console.log('REQ on /');
+    res.sendFile(__dirname + '/views/page-chef.html');
+});
+    
+app.get('/mentions-legales', function (req, res) {
+    console.log('REQ on /');
+    res.sendFile(__dirname + '/views/mentions-legales.html');
+});
+app.get('/credit', function (req, res) {
+    console.log('REQ on /');
+    res.sendFile(__dirname + '/views/credit.html');
+});
+app.get('/contact', function (req, res) {
+    console.log('REQ on /');
+    res.sendFile(__dirname + '/views/contact.html');
+});
+app.get('/rejoingnez-nous', function (req, res) {
+    console.log('REQ on /');
+    res.sendFile(__dirname + '/views/rejoingnez-nous.html');
+});
 server.listen(1337);
 console.log('server listening on port 1337');
