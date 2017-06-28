@@ -221,3 +221,56 @@ footer{
     width: auto;
 }
 
+
+
+/*RESPONSIVE*/
+@media (min-width: 1020px) and (max-width: 1270px) {
+    .big-title-left{
+        width: 85%;
+    }
+
+
+}
+@media (min-width: 895px) and (max-width: 1020px) {
+ .big-title-left{
+        width: 123%;
+    }
+
+
+}
+@media (min-width: 640px) and (max-width: 895px) {
+
+.big-title-left{
+        width: 100%;
+    }
+    
+    #big-img {
+    width: 100%;
+    
+    float: none;
+}
+    article{
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+@media (min-width: 100px) and (max-width: 640px) {
+ 
+.big-title-left{
+        width: 100%;
+    }
+       #big-img {
+    width: 100%;
+    
+    float: none;
+}
+    article{
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+

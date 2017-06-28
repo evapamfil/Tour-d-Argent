@@ -9,6 +9,10 @@
         <link rel="stylesheet" type="text/css" href="../static/css/main.css">
 
         <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+        
+        <link rel="icon" type="image/png" href="../static/pictures/apple-icon-57x57.png" />
+        
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -16,7 +20,7 @@
         <header>
             <img id="logo" src="../static/pictures/logo-type.svg" alt="logo">
 
-            <nav>
+            <nav class="hide_mobile">
                 <ul>
                     <li class="menu">
                         <a href="/">ACCUEIL</a>
@@ -33,16 +37,16 @@
                         <a href="/static/page-carte.html">LA CARTE</a>
                     </li>
                     <li class="menu" id="reservation">
-                        <a href="page-reservation.html">RESERVATION <img src="../static/pictures/Fichier%201.png"></a>
+                        <a href="/reservation">RESERVATION <img src="../static/pictures/Fichier%201.png"></a>
                         <ul class="off">
-                            <li><a>SALON PRIVE</a></li>
-                            <li><a>INVITATION</a></li>
+                            <li><a href="/reservation#section-salonprive">SALON PRIVE</a></li>
+                            <li><a href="/reservation#section-invitation">INVITATION</a></li>
                         </ul>
                     </li>
                     <li class="menu" id="comptoir">
-                        <a href="/static/page-comptoir.html">LE COMPTOIR <img src="../static/pictures/Fichier%201.png"></a>
+                        <a href="/comptoir">LE COMPTOIR <img src="../static/pictures/Fichier%201.png"></a>
                         <ul class="off">
-                            <li><a>E-BOUTIQUE</a></li>
+                            <li><a href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a></li>
                         </ul>
                     </li>
                     <li class="menu">
@@ -57,13 +61,70 @@
 
                 </ul>
             </nav>
+              <!-- NAVIGATION BURGER -->
+           <div class="btn-navigation">
+               <div class="barre"></div>
+               <div class="barre"></div>
+               <div class="barre"></div>
+           </div>
+            <div class="navigation">
+                <ul>
+                    <li class="menu-burger">
+                        <a href="/">ACCUEIL</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/chef" >LE CHEF</a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/chef/#section-cave">LA CAVE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/chef/#section-boulanger">LE BOULANGER</a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/chef/#section-rotisserie">LA RÔTISSERIE</a>
+                    </li>
+
+
+                    <li class="menu-burger">
+                        <a href="/static/page-carte.html">LA CARTE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/reservation">RESERVATION </a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/reservation#section-salonprive">SALON PRIVE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/reservation#section-invitation">INVITATION</a>
+                    </li>
+
+
+                    <li class="menu-burger" >
+                        <a href="/comptoir">LE COMPTOIR </a></li>
+
+                    <li class="menu-burger">
+                        <a href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a></li>
+
+                    <li class="menu-burger">
+                        <a href="https://tourdargent.com/blog/">AG MAG</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a>FR </a></li>
+
+                    <li class="menu-burger"><a>EN</a></li>
+                </ul>
+            </div>
         </header>
         
         <main>
              <div class="line-type-title">
                 <h1 class="big-title-left">CONTACT</h1>
-                <img src="../static/pictures/Trac%C3%A9%20145.png">
-                <div class="line"></div>
+                <img src="../static/pictures/Trac%C3%A9%20145.png" class="hide_mobile">
+                <div class="line hide_mobile"></div>
             </div>
             
             <section id="rejoingnez-nous">

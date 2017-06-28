@@ -1,12 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Réservation</title>
-    
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Réservation</title>
+
+        <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+
+        <link rel="stylesheet" type="text/css" href="../static/css/page-reservation.css">
+
+
+
+        <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        
+        <link rel="icon" type="image/png" href="../static/pictures/apple-icon-57x57.png" />
+        
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+    <body>
+
+        <header>
+            <img id="logo" src="../static/pictures/logo-type.svg" alt="logo">
+
+            <nav class="hide_mobile">
+                <ul>
+                    <li class="menu">
+                        <a href="/">ACCUEIL</a>
+                    </li>
+                    <li class="menu" id="chef">
+                        <a href="/chef" >LE CHEF <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a href="/chef/#section-cave">LA CAVE</a></li>
+                            <li><a href="/chef/#section-boulanger">LE BOULANGER</a></li>
+                            <li><a href="/chef/#section-rotisserie">LA RÔTISSERIE</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="/static/page-carte.html">LA CARTE</a>
+                    </li>
+                    <li class="menu" id="reservation">
+                        <a href="/reservation">RESERVATION <img src="../static/pictures/Fichier%201.png"></a>
+                       <ul class="off">
+                            <li><a href="/reservation#section-salonprive">SALON PRIVE</a></li>
+                            <li><a href="/reservation#section-invitation">INVITATION</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu" id="comptoir">
+                        <a href="/comptoir">LE COMPTOIR <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="https://tourdargent.com/blog/">AG MAG</a>
+                    </li>
+                    <li class="menu" id="language">
+                        <a>FR <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a>EN</a></li>
+                        </ul>
+                    </li> 
+
+                </ul>
+            </nav>
+              <!-- NAVIGATION BURGER -->
+           <div class="btn-navigation">
+               <div class="barre"></div>
+               <div class="barre"></div>
+               <div class="barre"></div>
+           </div>
+            <div class="navigation">
+                <ul>
+                    <li class="menu-burger">
+                        <a href="/">ACCUEIL</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/chef" >LE CHEF</a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/chef/#section-cave">LA CAVE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/chef/#section-boulanger">LE BOULANGER</a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/chef/#section-rotisserie">LA RÔTISSERIE</a>
+                    </li>
+
+
+                    <li class="menu-burger">
+                        <a href="/static/page-carte.html">LA CARTE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/reservation">RESERVATION </a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/reservation#section-salonprive">SALON PRIVE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/reservation#section-invitation">INVITATION</a>
+                    </li>
+
+
+                    <li class="menu-burger" >
+                        <a href="/comptoir">LE COMPTOIR </a></li>
+
+                    <li class="menu-burger">
+                        <a href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a></li>
+
+                    <li class="menu-burger">
+                        <a href="https://tourdargent.com/blog/">AG MAG</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a>FR </a></li>
+
+                    <li class="menu-burger"><a>EN</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="section-reservation">
+
+            <div class="line-type-title">
+                <h1 class="big-title-left">RESERVATION</h1>
+                <img src="../static/pictures/Trac%C3%A9%20145.png" class="hide_mobile">
+                <div class="line hide_mobile"></div>
+            </div>
+
+            <img id="img-reservation" src="../static/pictures/page-reservation/Image%202.png" alt="Reservation">
+
+
+            <section id="form-reservation">
+
+
+                <form>
+                    <input type="date" name="date" require/>
+                    <input type="time" name="time" require >
+                    <input type="text" name="number" placeholder="NB. PERSONNE" require>
+                    <input type="text" name="lastname" placeholder="NOM" require>
+                    <input type="text" name="firstname" placeholder="PRENOM"require>
+                    <input type="email" name="email" placeholder="E-MAIL"require >
+                    <input type="tel" name="tel" placeholder="TELEPHONE" require>
+
+                    <button type="submit">RESERVER</button>
+                </form>
+
+
+
+            </section>
+        </section>
+
+        <section id="section-salonprive">
+            <div class="line-type-title">
+                <div class="line hide_mobile"></div>
+                <img src="../static/pictures/Trac%C3%A9%20145.png" class="hide_mobile">
+                <h1 class="big-title-right" id="title-salon">SALON PRIVE</h1> 
+            </div>
+
+
+            <img id="img-salon" src="../static/pictures/page-reservation/Salon-priv%C3%A9.png" alt="Salon privé">
+            <h2 class="title-article-right">DEMANDE DE RESERVATION</h2>
+            <div class="line-type-article-right hide_mobile">
+                <div class="line"></div>
+                <img src="../static/pictures/Trac%C3%A9%20145.png">
+
+
+            </div>
+            <p class="text-right">Si vous souhaitez être contacté pour l’organisation d’un petit-déjeuner, d’un déjeuner ou d’un dîner dans notre Salon Privé, merci de remplir le formulaire ci-dessous, nous reviendrons vers vous dans les plus brefs délais.<br><br>
+
+                Situé au cinquième étage, notre Salon Privé propose dans un cadre élégant et confortable une vue unique sur Paris, Notre-Dame et la Seine.<br><br>
+
+                Nous pouvons accueillir de 15 à 50 personnes, ce qui en fait un lieu idéal pour l’organisation d’évènements privés, de petit-déjeuners, de réunions d’affaires, de déjeuners ou de dîners.
+
+
+            </p>
+
+        </section>
+        <section id="form-salon">
+            <img src="../static/pictures/page-reservation/Page-Salon-Prive-2.png" alt="Salon prive">
+
+
+
+            <form>
+                <input type="date" name="date" require/>
+                <input type="text" name="lastname" placeholder="NOM" require>
+                <input type="text" name="firstname" placeholder="PRENOM"require>
+                <input type="email" name="email" placeholder="E-MAIL"require >
+                <input type="tel" name="tel" placeholder="TELEPHONE" require>
+                <input type="text" name="societe" placeholder="SOCIETE" require>
+                <input type="text" name="adresse" placeholder="ADRESSE" require>
+                <input type="text" name="code" placeholder="CODE POSTAL" require>
+                <input type="text" name="city" placeholder="VILLE" require>
+                <input type="text" name="country" placeholder="PAYS" require>
+                <input type="text" name="number" placeholder="NB. PERSONNE" require>
+                <input type="text" name="info" placeholder="INFORMATIONS COMPLEMENTAIRES" require>
+
+
+                <button type="submit">RESERVER</button>
+            </form>
+            <p id="text-right"><span>Pour toute réservation de moins de 15 couverts, veuillez nous contacter.<br><br></span>
+                Ces informations sont tenues strictement confidentielles et en vertu de la loi relative à l’information et aux libertés n° 78-17 du 06/01/1978, notre clientèle conserve tout droit de regard et de modification.</p>
+
+        </section>
+        <section id="section-invitation">
+
+            <div class="line-type-title">
+                <h1 class="big-title-left">INVITATION</h1>
+                <img src="../static/pictures/Trac%C3%A9%20145.png" class="hide_mobile">
+                <div class="line hide_mobile"></div>
+            </div>
+             <img src="../static/pictures/page-reservation/Page-Invitations-Offrez-la-Tour-n%C2%B01-1.png" alt="Invitation"id="img-invitation">
+             <h2 class="title-article">OFFREZ LA TOUR</h2>
+                    <div class="line-type-article-left hide_mobile">
+                        <img src="../static/pictures/Trac%C3%A9%20145.png">
+                        <div class="line"></div>
+                    </div>
+                    <p class="text-left">MENU INVITATION
+
+À 690€ pour 2 personnes
+L’accord “mets et vins” sera réalisé par notre Sommelier.<br><br>
+
+
+Nos invitations sont valables à partir de deux personnes uniquement.
+Le Menu Invitation suit la saison et est donc amené à changer au cours de l’année.</p>
+        </section>
+        <section id="form-invitation">
+          <article id="left">
+           <h3 id="invite">VOS INVITES</h3>
+            <form>
+               
+                <input type="text" name="lastname" placeholder="NOM" require>
+                <input type="text" name="firstname" placeholder="PRENOM"require>
+                <input type="email" name="email" placeholder="E-MAIL"require >
+                <input type="tel" name="tel" placeholder="TELEPHONE" require>
+                <input type="text" name="societe" placeholder="SOCIETE" require>
+                <input type="text" name="adresse" placeholder="ADRESSE" require>
+                <input type="text" name="code" placeholder="CODE POSTAL" require>
+                <input type="text" name="city" placeholder="VILLE" require>
+                <input type="text" name="country" placeholder="PAYS" require>
+                <input type="text" name="number" placeholder="NB. PERSONNE" require>
+            
+
+
+             
+            </form>
+            </article>
+            <article id="right">
+                      <h3 id="invite">VOS COORDONNEES</h3>
+            <form>
+               
+                <input type="text" name="lastname" placeholder="NOM" require>
+                <input type="text" name="firstname" placeholder="PRENOM"require>
+                <input type="email" name="email" placeholder="E-MAIL"require >
+                <input type="tel" name="tel" placeholder="TELEPHONE" require>
+                <input type="text" name="societe" placeholder="SOCIETE" require>
+                <input type="text" name="adresse" placeholder="ADRESSE" require>
+                <input type="text" name="code" placeholder="CODE POSTAL" require>
+                <input type="text" name="city" placeholder="VILLE" require>
+                <input type="text" name="country" placeholder="PAYS" require>
+                <input type="text" name="number" placeholder="NB. PERSONNE" require>
+                <input type="text" name="info" placeholder="MESSAGE" require>
+
+
+                <button type="submit">ENVOYER</button>
+            </form>
+                
+            </article>
+            
+        </section>
+
+
+
+
+
+
+
+
+
+        <footer>
+            <ul id="nav-footer">
+                <li><a href="/mentions-legales">MENTION LEGALES</a></li>
+                <li><a href="/rejoingnez-nous">REJOIGNEZ-NOUS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/credit">CREDIT</a></li>
+            </ul>
+
+            <ul id=social-network>
+                <li><a href="https://www.facebook.com/latourdargent/"><img src="../static/pictures/Facebook%20copie.png"></a></li>
+                <li><a href="https://www.instagram.com/tourdargentparis/"><img src="../static/pictures/Insta%20copie.png"></a></li>
+                <li><a href="https://twitter.com/latourdargent?lang=fr"><img src="../static/pictures/twitter.png"></a></li>
+                <li><a href="https://plus.google.com/+TourdArgentParis"><img src="../static/pictures/Google%20plus%20copie.png"></a></li>
+                <li><a href="https://www.flickr.com/photos/tourdargentparis/"><img src="../static/pictures/filckr%20copie.png"></a></li>
+                <li><a href="https://www.linkedin.com/company-beta/3162633/"><img src="../static/pictures/Indeed%20copie.png"></a></li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="../static/js/script.js"></script>
+
+
+    </body>
 </html>

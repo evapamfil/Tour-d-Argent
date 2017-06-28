@@ -196,3 +196,53 @@ footer{
     height: 15px;
     width: auto;
 }
+
+/*RESPONSIVE*/
+@media (min-width: 1020px) and (max-width: 1270px) {
+    .big-title-left{
+        width: 22%;
+    }
+    #right {
+   
+    margin-left: 196px;
+}
+
+
+}
+@media (min-width: 895px) and (max-width: 1020px) {
+ .big-title-left{
+        width: 25%;
+    }
+      #right {
+   
+    margin-left: 65px;
+}
+
+
+}
+@media (min-width: 640px) and (max-width: 895px) {
+
+   .big-title-left{
+        width: 100%;
+    }
+    #right,
+    #left{
+   float: none;
+    margin-left: 0px;
+}
+
+}
+
+@media (min-width: 100px) and (max-width: 640px) {
+ 
+  .big-title-left{
+        width: 100%;
+    }
+    #right,
+    #left{
+   float: none;
+    margin-left: 0px;
+}
+    
+}
+

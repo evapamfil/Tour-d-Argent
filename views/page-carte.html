@@ -1,10 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>La Carte</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>La Carte</title>
+
+        <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+
+        <link rel="stylesheet" type="text/css" href="../static/css/page-carte.css">
+
+
+        <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <link rel="icon" type="image/png" href="../static/pictures/apple-icon-57x57.png" />
+        
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="../static/pictures/logo-type.svg" alt="logo">
+
+            <nav class="hide_mobile">
+                <ul>
+                    <li class="menu">
+                        <a href="/">ACCUEIL</a>
+                    </li>
+                    <li class="menu" id="chef">
+                        <a href="/chef" >LE CHEF <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a href="/chef/#section-cave">LA CAVE</a></li>
+                            <li><a href="/chef/#section-boulanger">LE BOULANGER</a></li>
+                            <li><a href="/chef/#section-rotisserie">LA RÔTISSERIE</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="/static/page-carte.html">LA CARTE</a>
+                    </li>
+                    <li class="menu" id="reservation">
+                        <a href="/reservation">RESERVATION <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a href="/reservation#section-salonprive">SALON PRIVE</a></li>
+                            <li><a href="/reservation#section-invitation">INVITATION</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu" id="comptoir">
+                        <a href="/comptoir">LE COMPTOIR <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="https://tourdargent.com/blog/">AG MAG</a>
+                    </li>
+                    <li class="menu" id="language">
+                        <a>FR <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a>EN</a></li>
+                        </ul>
+                    </li> 
+
+                </ul>
+            </nav>
+              <!-- NAVIGATION BURGER -->
+           <div class="btn-navigation">
+               <div class="barre"></div>
+               <div class="barre"></div>
+               <div class="barre"></div>
+           </div>
+            <div class="navigation">
+                <ul>
+                    <li class="menu-burger">
+                        <a href="/">ACCUEIL</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/chef" >LE CHEF</a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/chef/#section-cave">LA CAVE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/chef/#section-boulanger">LE BOULANGER</a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/chef/#section-rotisserie">LA RÔTISSERIE</a>
+                    </li>
+
+
+                    <li class="menu-burger">
+                        <a href="/static/page-carte.html">LA CARTE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/reservation">RESERVATION </a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/reservation#section-salonprive">SALON PRIVE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/reservation#section-invitation">INVITATION</a>
+                    </li>
+
+
+                    <li class="menu-burger" >
+                        <a href="/comptoir">LE COMPTOIR </a></li>
+
+                    <li class="menu-burger">
+                        <a href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a></li>
+
+                    <li class="menu-burger">
+                        <a href="https://tourdargent.com/blog/">AG MAG</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a>FR </a></li>
+
+                    <li class="menu-burger"><a>EN</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="line-type-title">
+                <h1 class="big-title-left">LA CARTE</h1>
+                <img src="../static/pictures/Trac%C3%A9%20145.png "class="hide_mobile">
+                <div class="line hide_mobile"></div>
+            </div>
+            <div id="menu-fixed">
+                <ul id="ul-fixed">
+                    <li><a href="/carte#section-mise-en-bouche">MISE EN BOUCHE</a></li>
+                    <li><a href="/carte#section-hors-doeuvre">HORS D'OEUVRE</a></li>
+                    <li><a href="/carte#section-entrees">ENTREES</a></li>
+                    <li><a href="/carte#section-poissons">POISSONS</a></li>
+                    <li><a href="/carte#section-rots">RÔTS</a></li>
+                    <li><a href="/carte#section-fromages">FROMAGES</a></li>
+                    <li><a href="/carte#section-fantaisie">FANTAISIE DE LA TOUR</a></li>
+                    <li><a href="/carte#section-entremet">ENTREMETS & DOUCEURS</a></li>
+                    <li><a href="/carte#section-menus">MENU</a></li>
+                </ul>
+            </div>
+
+            <section class="menu-section" id="section-mise-en-bouche">
+                <article class="flex">
+                    <h3>MISE EN BOUCHE<br>l'élégance du partage</h3>
+                    <p>
+                        CARROTE D'ARNAUD AUBAGNE<br>
+                        Aracbnéenne, crème épicée, safran, fenouil, coriandre,
+                        noisette, pampeplemousse<br><br>
+
+                        ARTICHAUT<br>
+                        Belle chip croquante<br><br>
+
+                        BETTRAVE CAILLOU<br>
+                        Kéfir, anis, basilic Thaï
+
+                    </p>
+                </article>
+                <article class="flex">
+                    <img class="img-carte" src="../static/pictures/page-carte/Caneton-Mazarine-2eme-service.png">
+                    <p>
+                        POMME VERTE DES JARDINS DE BRIEVE<br>
+                        Coque de raifort, jus de livèche
+
+                    </p>
+                </article>
+            </section>
+
+            <section class="menu-section" id="section-hors-doeuvre">
+                <article class="flex">
+                    <h3>HORS D'OEUVRE<br>Mets délicats ou petites pièces à partager en attendant vos entrées  </h3>
+                    <p>
+
+                        FEVETTE DE ROGNONAS DE LA FAMILLE BOYER
+                        <br>
+                        A la "française", glace béarnaise, crumble de poitrine paysanne, oseille<br><br>
+
+                    </p>
+                </article>
+                <article class="flex">
+                    <img class="img-carte" src="../static/pictures/page-carte/Image%201.png">
+
+                </article>
+            </section> 
+
+            <section class="menu-section" id="section-entrees">
+                <article class="flex">
+                    <h3>ENTRÉES<br>ou petits entremets   </h3>
+                    <p>
+
+
+                        ASPERGES BLANCHES XXL BIO DE FRÉDÉRIC POUPARD<br>
+                        Basilic et fraises ciflorette, sorbet parmesan, vinaigre balsamique traditionnel de Modène "extrea vecchio", huile d'olive "1000" de Philippe Chansigaud, soupe glacée au citron<br>
+                        88 €<br><br>
+
+                        LANGOUSTE PUCE ROYALE<br>
+                        A la nage épicée citronelle et limequat, condiment de Macadamia, floralie d'herbes et fleurs, premiers jeunes légumes des jardins de Saint-Hilaire<br>
+                        145 €<br><br>
+
+                        FOIE GRAS DE CANARD<br>
+                        (POUR DEUX PERSONNES)<br>
+                        Grillé, laqué au vieux balsamique tradition, cristalline de laitue de mer, tuile d'araignée de mer,  rhubarbe tendre, vignaigrette d'huîtres<br>
+                        89 € (P.P.) 
+
+
+
+                    </p>
+                </article>
+                <article class="flex">
+                    <img class="img-carte" src="../static/pictures/page-carte/Langouste-puce-royale-a-la-nage-epicee-citronnelle-et-limequat-V1.png">
+                    <p>
+
+                        QUENELLE HOMMAGE AU GRAND-PÈRE<br>
+                        Sauce fleurette gratinée, morillles blondes et brunes, oxalis doré, pourpre et verte<br>
+                        78 €
+
+                    </p>
+
+                </article>
+            </section> 
+            <section class="menu-section" id="section-poissons">
+                <article class="flex">
+                    <h3>POISSONS<br>L'art de la fraicheur    </h3>
+                    <p>
+
+
+                        TURBOT SAUVAGE DE ROSCOFF<br>
+                        Rôti aux pousses de verdures, feuilles de capucines, fraises veres, pommes Ratte confites, jus de volaille acidulé aux aromates<br>
+                        118 €<br><br>
+
+                        SAINT -PIERRE DE LIGNE DE ROSCOFF<br>
+                        Cuisiné à la nacre, bohémienne de petits pois et carottes nouvelles, jus de homard acidulé, citron vert<br>
+                        87 €<br><br>
+
+                        HOMARD BLEU DE CASIER DES ÎLES CHAUSEY (EN DEUX FAÇONS)<br>
+                        Les pinces : délicatements infusées à la camomille, groseilles et petits pois<br>
+                        La queue : pochée lentement dans un beurre d'agrumes, sabayon au vin Xérès, fricassée de petits pois et morilles au pourpier, fleur de ciboulette <br>
+                        152 € 
+
+
+
+
+
+                    </p>
+                </article>
+                <article class="flex">
+                    <img class="img-carte" src="../static/pictures/page-carte/Turbot-sauvage-de-la-Trinite-sur-Mer-truffes-noires-etc.png">
+                    <p>
+
+                        BROCHET SAUVAGE DES GRAVIÈRES DE VÉTHEUIL, 
+                        QUENELLE HOMMAGE AU GRAND-PÈRE<br>
+                        Sauce fleurette gratinée, morillles blondes et brunes, oxalis doré, pourpre et verte<br>
+                        78 €
+
+
+
+                    </p>
+
+                </article>
+            </section> 
+
+            <section class="menu-section" id="section-rots">
+                <article class="flex">
+                    <h3>RÔTS<br>Ou pièces de résistance    </h3>
+                    <p>
+                        BŒUF DE L'AUBRAC*<br>
+                        Morceau choisi rôti, raviole ouverte de queue braisée, ketchupe de pommes vertes artichauts poivrades rôti, jus corsé<br>
+                        118 €<br><br>
+
+                        AGNEAU DE LAIT DE L'AVEYRON*<br>
+                        Selle, côte et gigot à la puntarella, pomme rôties, crumble d'agneau, jus acidulé au vinaigre et curry<br>
+                        88 €
+                    </p>
+                    <img class="img-carte" src="../static/pictures/page-carte/Caneton-Mazarine-1er-service-1.png">
+                </article>
+                <article class="flex">
+
+                    <p>
+                        RIS DE VEAU FERMIER* <br>
+                        Doré u sautoire, grillotiné de gratons, morilles étuvées au jus de savagnon émulsion d'ail des ours, sucs de parmesan di-Reggiano, baselle<br>
+                        148 € <br><br>
+
+                        CANETON DE CHALLANS*<br>
+                        Rôti aux épices, crackers de canard, sanguette épicée, fumet de réglisse, navets confits, oignons nouveaux rôtis <br>
+                        94 €<br><br>
+
+                        CANETON MAZARINE (EN DEUX SERVICES)*<br>
+                        1er service : Rôti en bigarade, voilé d'asperges vertes au zestes, mousseline de petits pois à l'orange, pomme soufflées<br>
+                        2e service : Gras de cuisse braisée aux navets primeurs, poivre de Timut, confiture d'orange bigarade, feuille de moutarde<br>
+                        120 €
+                    </p>
+
+                </article>
+            </section> 
+            <section class="menu-section" id="section-fromage">
+                <article class="flex1">
+                    <h3>FROMAGES<br>Affinés par Laurent Dubois, notre Maître Fromager un des Meilleurs Ouvriers de France 2000    </h3>
+                    <p>
+
+                        SÉLECTION DE FROMAGES<br>
+                        32 €<br><br>
+
+                        COMPTÉ D'EXEPTION TRENTE-SIX-MOIS<br>
+                        Granges Maillot, Famille Badoz<br>
+                        16 €
+                    </p>
+
+                </article>
+
+
+            </section> 
+
+            <section class="menu-section" id="section-entremet">
+                <article class="flex">
+                    <h3>ENTREMETS & DOUCEURS<br>Tentation et délices à commander en début de repas  </h3>
+                    <p>
+                        FLEURS PRINTANIÈRES<br>
+                        Floralies cristallisées, mousse de rose, sorbet framboise et champagne rosé, gelée de miel de notre toit, barbe à papa<br>
+                        39 €<br><br>
+
+                        RHUBARBE<br>
+                        Comme une tarte croustillante, mousse de fromage blanc,
+                        jus de coco lié en texture, sorbet rhubarbe<br>
+                        38 €
+
+                    </p>
+
+                </article>
+                <article class="flex">
+
+                    <p>
+                        COMME UN VACHERIN, FRAISE DES BOIS, MANGUE<br>
+                        Mikado fraise, menthe, nature, parfum d'orange et gimgembre, crème fouetée infusée au sucre Demerara épicé, verveine, menthe, basilic<br>
+                        45 €<br><br>
+
+                        OR NOIR COMBINAISON SURPRISE COMME UNE BARRE CHOCOLATÉE<br>
+                        Mousse légère, nougat et nougatine aux amandes, gelée de cacao, crème glacée vanillée à la fleur de sel, fleur de cacao<br>
+                        36 €
+
+                    </p>
+
+                </article>
+            </section>
+            <section class="menu-section" id="section-menus">
+                <article class="flex">
+                    <h3>AUTOUR DU DÉJEUNER - 105 €<br>(+40 € le plat supplémentaire)    </h3>
+                    <p>
+                        QUENELLE DE BROCHET HOMMAGE AU GRAND-PÈRE<br>
+                        Sauce fleurette gratinée aux écrevisses, oxalis<br><br>
+
+                        GROSSES ASPERGES BLANCHES BIO DE FRÉDÉRIC POUPARD<br>
+                        A la crème de citron de Menton, praliné salé à l'amande, jus d'asperges émulsionné à l'huile d'olive "Lessatini", soup d'asperges glacée<br><br>
+
+                        AILE DE RAIE BOUCLÉE DE PETIT BATEAU, CITRON DE MENTON<br>
+                        Câpres, amandes, salicornes, poudre de noisettes<br><br>
+
+                        FILET DE CANETON<br>
+                        Filet de caneton rôti aux épices, émulsion de vinaigre réglissé, navets confits, oignons nouveaux rôtis
+
+                    </p>
+
+                </article>
+                <article class="flex">
+                    <img class="img-carte" src="../static/pictures/page-carte/Aile-de-raie-bouclee-de-Petit-Bateau-citron-de-Menton-capres-amandes-salicornes-poudre-de-noisettes-V1.png">
+                    <p>
+
+                        FRAISES CIFLORETTE XXL<br>
+                        Sur un biscuit onctueux Traou Mad, crème glacée italienne à la fève Tonka marbré de granité<br><br>
+
+                        OR NOIR COMBINAISON SURPRISE COMME UNE BARRE CHOCOLATÉE<br>
+                        Mousse légère, nougat et nougatine aux amandes, 
+                        gelée de cacao,
+                        crème glacée vanillée à la fleur de sel, fleur de cacao
+
+
+                    </p>
+
+                </article>
+            </section> 
+            <section class="menu-section" >
+                <article class="flex1">
+                    <h3>TOUR DU CANETON CROISÉ DE "LILIANE BURGAUD" - 350 €<br>(Pour l'ensemble des convives)    </h3>
+                    <p>
+
+                        AVANT PLAT<br>
+                        Abats, petits pois et feuilles d'amarante, vinaigrette de saupiquet<br><br>
+
+                        1er SERVICE<br>
+                        Oeuf de cane "monochrome", jaune acidulé aux fleurs de capucines et tagètes, courgette et betteraves jaunes<br><br>
+
+                        2e SERVICE <br>
+                        Suprême, rôti au Porto, marmelade de Sucrine, puntarella, pamplemousse rose lié à l’épeautre de Sault, émulsion d’ail des ours.<br><br>
+
+                        3e SERVICE <br>
+                        Foie gras grillé, laqué au vieux balsamique tradition, cristalline de laitue de mer, tuile d’araignée de mer, rhubarbe tendre, vinaigrette d’huîtres<br><br>
+
+                        4e SERVICE<br>
+                        Cuisse braisée aux premières cerises, chou pointu, gel de griotte acidulé, fleur de sureau, lierre terrestre<br><br>
+
+                        DESSERT<br>
+                        Pour les petits et les grands, « souvenir d’enfance » 
+                        Interprétation d’une feuillantine de brick aux vanilles, Tahitensis de Tahiti, Panifolia d’Inde façon millefeuille
+
+                    </p>
+
+                </article>
+        
+            </section> 
+                     <section class="menu-section" >
+                <article class="flex1">
+                    <h3>LE CANNETON FRÉDÉRIC DELAIRE – 240€<br>A partir de deux personnes et pour l’ensemble de la table    </h3>
+                    <p>
+
+                       Pour donner à ce plat emblématique toute l’attention qu’il mérite, faites-nous le plaisir de commander VOTRE CANETON au moins deux jours à l’avance
+
+                    </p>
+
+                </article>
+            </section>
+                  <section class="menu-section" >
+                <article class="flex1">
+                    <h3>IMAGINATION DE PHILIPPE EN SIX SERVICES – 350 €<br>Pour l’ensemble des convives </h3>
+                  
+
+                </article>
+            </section>
+
+        </main>
+
+        <footer>
+            <ul id="nav-footer">
+                <li><a href="/mentions-legales">MENTION LEGALES</a></li>
+                <li><a href="/rejoingnez-nous">REJOIGNEZ-NOUS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/credit">CREDIT</a></li>
+            </ul>
+
+            <ul id=social-network>
+                <li><a href="https://www.facebook.com/latourdargent/"><img src="../static/pictures/Facebook%20copie.png"></a></li>
+                <li><a href="https://www.instagram.com/tourdargentparis/"><img src="../static/pictures/Insta%20copie.png"></a></li>
+                <li><a href="https://twitter.com/latourdargent?lang=fr"><img src="../static/pictures/twitter.png"></a></li>
+                <li><a href="https://plus.google.com/+TourdArgentParis"><img src="../static/pictures/Google%20plus%20copie.png"></a></li>
+                <li><a href="https://www.flickr.com/photos/tourdargentparis/"><img src="../static/pictures/filckr%20copie.png"></a></li>
+                <li><a href="https://www.linkedin.com/company-beta/3162633/"><img src="../static/pictures/Indeed%20copie.png"></a></li>
+            </ul>
+        </footer>
+
+
+        <script type="text/javascript" src="../static/js/script.js"></script>
+
+
+    </body>
 </html>

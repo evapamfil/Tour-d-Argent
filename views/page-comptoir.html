@@ -1,10 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Le Comptoir</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Le Comptoir</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+        
+        <link rel="stylesheet" type="text/css" href="../static/css/page-comptoir.css">
+        
+        <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <link rel="icon" type="image/png" href="../static/pictures/apple-icon-57x57.png" />
+        
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="../static/pictures/logo-type.svg" alt="logo">
+
+            <nav class="hide_mobile">
+                <ul>
+                    <li class="menu">
+                        <a href="/">ACCUEIL</a>
+                    </li>
+                    <li class="menu" id="chef">
+                        <a href="/chef" >LE CHEF <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a href="/chef/#section-cave">LA CAVE</a></li>
+                            <li><a href="/chef/#section-boulanger">LE BOULANGER</a></li>
+                            <li><a href="/chef/#section-rotisserie">LA RÔTISSERIE</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="/static/page-carte.html">LA CARTE</a>
+                    </li>
+                    <li class="menu" id="reservation">
+                        <a href="/reservation">RESERVATION <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a href="/reservation#section-salonprive">SALON PRIVE</a></li>
+                            <li><a href="/reservation#section-invitation">INVITATION</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu" id="comptoir">
+                        <a href="/comptoir">LE COMPTOIR <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="https://tourdargent.com/blog/">AG MAG</a>
+                    </li>
+                    <li class="menu" id="language">
+                        <a>FR <img src="../static/pictures/Fichier%201.png"></a>
+                        <ul class="off">
+                            <li><a>EN</a></li>
+                        </ul>
+                    </li> 
+
+                </ul>
+            </nav>
+              <!-- NAVIGATION BURGER -->
+           <div class="btn-navigation">
+               <div class="barre"></div>
+               <div class="barre"></div>
+               <div class="barre"></div>
+           </div>
+            <div class="navigation">
+                <ul>
+                    <li class="menu-burger">
+                        <a href="/">ACCUEIL</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/chef" >LE CHEF</a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/chef/#section-cave">LA CAVE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/chef/#section-boulanger">LE BOULANGER</a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/chef/#section-rotisserie">LA RÔTISSERIE</a>
+                    </li>
+
+
+                    <li class="menu-burger">
+                        <a href="/static/page-carte.html">LA CARTE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/reservation">RESERVATION </a>
+                    </li>
+
+                    <li class="menu-burger">
+                        <a href="/reservation#section-salonprive">SALON PRIVE</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a href="/reservation#section-invitation">INVITATION</a>
+                    </li>
+
+
+                    <li class="menu-burger" >
+                        <a href="/comptoir">LE COMPTOIR </a></li>
+
+                    <li class="menu-burger">
+                        <a href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a></li>
+
+                    <li class="menu-burger">
+                        <a href="https://tourdargent.com/blog/">AG MAG</a>
+                    </li>
+                    <li class="menu-burger">
+                        <a>FR </a></li>
+
+                    <li class="menu-burger"><a>EN</a></li>
+                </ul>
+            </div>
+        </header>
+        <section id="section-comptoir">
+            <div class="line-type-title">
+                <h1 class="big-title-left">LE COMPTOIR</h1>
+                <img src="../static/pictures/Trac%C3%A9%20145.png" class="hide_mobile">
+                <div class="line hide_mobile"></div>
+            </div>
+            <img src="../static/pictures/page-comptoir/Page-Le-Comptoir-n%C2%B01-1-1.jpg" alt="Le comptoir" class="img-comptoir">
+                         <h2 class="title-article">DECOUVREZ LE COMPTOIR</h2>
+                    <div class="line-type-article-left hide_mobile">
+                        <img src="../static/pictures/Trac%C3%A9%20145.png">
+                        <div class="line"></div>
+                    </div>
+                    <p class="text-left">Que vous sortiez d’un déjeuner à la Tour d’Argent ou que vous soyez à vous dégourdir les jambes quai de la Tournelle, poussez la porte du Comptoir de la Tour : notre bar-boutique ouvert à tous où vous pourrez boire un café, un jus de fruits, une coupe de champagne – et plus si affinités.<br><br>
+
+Car avec notre gamme d’épicerie fine sucrée (confitures, miel de notre toit, biscuits…) et salée (terrines, foie gras, vinaigres, huiles, moutardes…), de vins, d’accessoires et d’arts de la table, il faudrait être ermite pour repartir les mains vides. Prenez le temps de flâner, et confectionnez votre coffret cadeau sur-mesure et selon vos envies. Des coffrets qui pourraient ressembler à ceux-là…<br><br>
+
+Coffret “L’Incontournable” composé de : Sauternes, foie gras de canard entier, chutney aux épices galantes. Entourez-vous de gourmets, enlevez vos gants, savourez.<br><br>
+
+Coffret “Un dimanche à la campagne” composé de : Bordeaux Graves rouge, rillettes de canard au foie gras, terrine de canard et foie gras au poivre vert, chutney aux épices galantes.<br><br>
+
+Une invitation au voyage, comme disait Baudelaire ?<br><br>
+
+“Le déjeuner sur l’herbe” répondrait Manet. Deux terrines de canard au foie gras, un chutney et notre délicieux Graves rouge : avec ce coffret, l’exotisme n’est pas loin…<br><br>
+
+Le Comptoir de la Tour d’Argent se fait une certaine idée de la France – et de la qualité de ses artisans.<br><br>
+
+Main dans la main, fidèlement, la Tour ne travaille qu’avec des producteurs français attachés à la terre, au savoir-faire et à la transmission.</p>
+       <img class="img-comptoir" src="../static/pictures/page-comptoir/Page-Le-Comptoir-n%C2%B02.jpg" alt="Ficelles tour d'argent">
+       <a href="https://www.comptoirdelatour.com/fr/">E-BOUTIQUE</a>
+       
+        </section>
+
+        <footer>
+            <ul id="nav-footer">
+                <li><a href="/mentions-legales">MENTION LEGALES</a></li>
+                <li><a href="/rejoingnez-nous">REJOIGNEZ-NOUS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+                <li><a href="/credit">CREDIT</a></li>
+            </ul>
+
+            <ul id=social-network>
+                <li><a href="https://www.facebook.com/latourdargent/"><img src="../static/pictures/Facebook%20copie.png"></a></li>
+                <li><a href="https://www.instagram.com/tourdargentparis/"><img src="../static/pictures/Insta%20copie.png"></a></li>
+                <li><a href="https://twitter.com/latourdargent?lang=fr"><img src="../static/pictures/twitter.png"></a></li>
+                <li><a href="https://plus.google.com/+TourdArgentParis"><img src="../static/pictures/Google%20plus%20copie.png"></a></li>
+                <li><a href="https://www.flickr.com/photos/tourdargentparis/"><img src="../static/pictures/filckr%20copie.png"></a></li>
+                <li><a href="https://www.linkedin.com/company-beta/3162633/"><img src="../static/pictures/Indeed%20copie.png"></a></li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="../static/js/script.js"></script>
+    </body>
 </html>

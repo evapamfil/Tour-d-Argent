@@ -1,0 +1,161 @@
+.line{
+    width: 100%;
+    border-top: solid 0.5px black;
+    margin-left: -2px;
+
+}
+
+.line-type-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.line-type-title img{
+    text-align: center;
+    width: 20px;
+    height: auto;
+}
+.big-title-left{
+    font-family: Oswald-extralight;
+    font-weight: normal;
+    font-size: 60px;
+    margin-right: 10px;
+    width: 25%;
+    
+}
+main{
+    overflow: hidden;
+}
+.menu-section{
+    float: right;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    overflow: hidden;
+    margin-bottom: 150px;
+}
+#menu-fixed{
+    float: left;
+    overflow: hidden;
+    width: 25%;
+    
+    
+}
+#menu-fixed ul{
+    list-style-type: none;
+}
+#menu-fixed li a{
+    font-family: oswald-light;
+    text-decoration: none;
+    color: #000000;
+    line-height: 35px;
+}
+
+.menu-fixe {
+    position: fixed;
+    width: 100%;
+
+}
+.flex{
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+.flex1{
+       display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.img-carte{
+    width: 80%;
+    margin-bottom: 20px;
+}
+p{
+    font-family: lato-light;
+    font-size: 20px;
+}
+h3{
+    font-family: oswald-light;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+
+
+/*RESPONSIVE*/
+@media (min-width: 1020px) and (max-width: 1270px) {
+    .big-title-left{
+        width: 31%;
+    }
+
+
+}
+@media (min-width: 895px) and (max-width: 1020px) {
+    .menu-section{
+        flex-direction: column;
+    }
+    .flex{
+        width: 90%;
+    }
+      .big-title-left{
+        width: 40%;
+    }
+
+
+}
+@media (min-width: 640px) and (max-width: 895px) {
+  .menu-section{
+        flex-direction: column;
+    }
+    .flex{
+        width: 95%;
+    }
+      .big-title-left{
+        width: 100%;
+    }
+
+
+
+}
+
+@media (min-width: 100px) and (max-width: 640px) {
+  .menu-section{
+        flex-direction: column;
+    }
+    .flex{
+        width: 95%;
+    }
+      .big-title-left{
+        width: 100%;
+    }
+    .menu-fixe a{
+        font-size: 13px;
+    }
+        .flex p{
+        font-size: 15px;
+    }
+        .flex h3{
+        font-size: 20px;
+    }
+        .flex1 p{
+        font-size: 15px;
+    }
+        .flex1 h3{
+        font-size: 20px;
+    }
+        
+
+
+}
