@@ -203,6 +203,7 @@ main #home{
     float: right;
     width: 50%;
     margin-top: 50px;
+    
 
 }
 #history-img-right-4{
@@ -216,6 +217,7 @@ main #home{
     float: right;
     width: 45%;
     margin-top: 50px;
+    margin-left: 30px;
 
 }
 

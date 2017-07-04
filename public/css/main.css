@@ -85,6 +85,13 @@ header nav ul{
     align-items: center;
 
 }
+.menu a:hover{
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    align-items: center;
+
+}
 
 .menu a img{
     height: 5px;
@@ -166,6 +173,12 @@ footer{
     font-family: oswald-light;
     text-decoration: none;
     color: #000000;
+}
+
+#nav-footer li a:hover{
+    
+    color: grey;
+    
 }
 
 
@@ -315,4 +328,16 @@ footer{
       #nav-footer li {
     margin-right: 3px;
 }
+}
+@media (max-width: 450px) {
+    #social-network {
+   
+    float: left;
+           
+    margin-top: 5px;
+}
+      
+       
+}
+   
 }

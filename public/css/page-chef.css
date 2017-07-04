@@ -197,6 +197,7 @@
     margin-right: auto;
     width: 60%;
     float: left;
+    margin-top: 70px;
 }
 
 .swiper-slide {
@@ -355,6 +356,7 @@
         }
         .swiper-container{
             width: 100%;
+            
         }
         .swiper-slide{
             width: 100% !important;
